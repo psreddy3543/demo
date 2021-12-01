@@ -18,5 +18,14 @@ pipeline
         REGISTRY_AUTH = credentials("docker-registry")
         STACK_PREFIX = "my-project-stack-name"
     }
-  }
+    stages
+      {
+        stage
+          {
+              steps
+              {
+                  sh 'touch abcd.txt'
+              }
+          }
+      }
   }
