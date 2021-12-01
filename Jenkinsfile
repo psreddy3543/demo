@@ -14,9 +14,7 @@ pipeline
         SLACK_TOKEN = credentials("slack_token")
         DEPLOY_URL = "https://deployment.example.com/"
 
-        COMPOSE_FILE = "docker-compose.yml"
-        REGISTRY_AUTH = credentials("docker-registry")
-        STACK_PREFIX = "my-project-stack-name"
+       
     }
     stages
       {
